@@ -1,5 +1,4 @@
 import numpy as np
-import sys
 
 LENGTH = 3
 
@@ -23,11 +22,12 @@ def print_matrix(matrix: list, newline: bool):
 
 matrix = [[0 for i in range(LENGTH)] for j in range(LENGTH)]
 
-task_1(matrix)
-print_matrix(matrix, True)
+if __name__ == "__main__":
+    task_1(matrix)
+    print_matrix(matrix, True)
 
-task_2(matrix)
-print_matrix(matrix, True)
+    task_2(matrix)
+    print_matrix(matrix, True)
 
-task_3(matrix)
-print_matrix(matrix, False)
+    task_3(matrix)
+    print_matrix(matrix, False)
